@@ -25,7 +25,7 @@ public class LoginInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        //获取session 模拟本地session登录
+        //获取session 模拟本地session登录//
         HttpSession session = request.getSession();
         String token = null;
         Cookie[] cookies = request.getCookies();
